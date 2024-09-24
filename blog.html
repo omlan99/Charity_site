@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .primary-font {
+        font-family: "Lexend", sans-serif;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="primary-font">
+    <header class="container mx-auto bg-[#f8f7f2] pb-12 sticky top-0">
+        <nav class="flex justify-between bg-[#f8f7f2] py-6 px-5">
+          <div>
+            <a href="./index.html" class="btn bg-[#b4f461] hover:bg-[#b4f461]  font-semibold">Home</a>
+          </div>
+          <div class="flex items-center justify-center">
+            <img src="./assets/logo.png" alt="" />
+            <p class="font-semibold text-xl px-4">Donate Bangladesh</p>
+          </div>
+          <div class="flex items-center justify-center">
+            <img src="./assets/coin.png" alt="" />
+            <p class="font-medium text-xl px-3" >
+              <span id="mainBalance">5500</span> BDT
+            </p>
+          </div>
+        </nav>
+      </header>
+      <main class="container mx-auto p-5">
+        <h1 class="text-3xl font-bold my-4 ">Important FAQ</h1>
+        <section>
+            <div class="join join-vertical w-full">
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" checked="checked" />
+                  <div class="collapse-title text-xl font-medium">What is DOM?</div>
+                  <div class="collapse-content">
+                    <p>DOM is referred to Documen Object Model</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="collapse-title text-xl font-medium">What is a Javascript and how JavaScript worked with DOM(Document Object Model)?</div>
+                  <div class="collapse-content">
+                    <p>Javascript is a programming language initially developed for the client-side scripting language. But today it is also used as a server-side language. In javascript, programs are called script. It is used to make web pages alive. Javascript allows us to work on DOM (Document Object Model) object and to manipulate them programmatically, the DOM allows us to change, delete, modify, update the part of documents like any HTML element or XML.</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="collapse-title text-xl font-medium"> Why is the document called the Object Model?</div>
+                  <div class="collapse-content">
+                    <p>Document is modeled of object and document in not only the structure of an object but it also includes the behavior of document structure and object that contains the elements like HTML tags and their attributes</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">What is a DOM EventListener method and how it can show the current date and time?</div>
+                    <div class="collapse-content">
+                      <p>DOM Event Listener is a method used to attach event handlers to specific elements. It has mainly two methods, one is addEvenetListener and another is removeEventListener.
+
+                        addEventListener() method adds an Event Handler without overwriting and existing Event Handler. You can add more than two Event handlers (of the same types or different types) on</p>
+                    </div>
+                  </div>
+              </div>
+        </section>
+      </main>       
+</body>
+</html>
