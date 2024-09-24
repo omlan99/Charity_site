@@ -28,8 +28,8 @@ function handleDonation(inputId, donatedBalanceId, donationHeadingId) {
     let currentDonatedBalance = parseInt(donatedBalanceElement.textContent);
     donatedBalanceElement.textContent = currentDonatedBalance + donationAmount;
 
-    // show modal
-    my_modal_2.showModal();
+    
+    
     // Get the heading text
     let donateHeading = getMyId(donationHeadingId).textContent;
 
@@ -48,6 +48,13 @@ function handleDonation(inputId, donatedBalanceId, donationHeadingId) {
     historyBox.insertBefore(historyData, historyBox.firstChild);
 
     donationInput.value = "";
+    // show modal
+    my_modal_2.showModal();
+    // clsose modal 
+    const closeBtn = getMyId('closeBtn');
+    closeBtn.addEventListener('click', function(){
+      my_modal_2.close()
+    })
   } else {
     alert("Invalid donation amount or insufficient main balance!");
   }
