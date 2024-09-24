@@ -26,7 +26,11 @@
     <header class="container mx-auto bg-[#f8f7f2] pb-12 sticky top-0">
       <nav class="flex justify-between bg-[#f8f7f2] py-6 px-5">
         <div>
-          <a href="./blog.html" class="btn bg-[#b4f461] hover:bg-[#b4f461]  font-semibold">Blog</a>
+          <a
+            href="./blog.html"
+            class="btn bg-[#b4f461] hover:bg-[#b4f461] font-semibold "
+            >Blog</a
+          >
         </div>
         <div class="flex items-center justify-center">
           <img src="./assets/logo.png" alt="" />
@@ -34,24 +38,26 @@
         </div>
         <div class="flex items-center justify-center">
           <img src="./assets/coin.png" alt="" />
-          <p class="font-medium text-xl px-3" >
+          <p class="font-medium text-xl px-3">
             <span id="mainBalance">5500</span> BDT
           </p>
         </div>
       </nav>
     </header>
     <main class="container mx-auto">
-      <section class="flex justify-center items-center pt-20 pb-8 sticky top-28  backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-200">
+      <section
+        class="flex justify-center items-center pt-20 pb-8 sticky top-28 backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-200"
+      >
         <div>
-          <button 
-          class="btn bg-[#b4f461] font-medium mr-4 px-8 text-xl hover:bg-[#b4f461] hover:text-black"
-          id="donationBtn"
+          <button
+            class="btn bg-[#b4f461] font-medium mr-4 px-8 text-xl hover:bg-[#b4f461] hover:text-black"
+            id="donationBtn"
           >
             Donation
           </button>
-          <button 
-          class="btn bg-neutral-50 font-medium px-8 text-xl hover:bg-[#b4f461] hover:text-black text-gray-400"
-          id="historyBtn"
+          <button
+            class="btn bg-neutral-50 font-medium px-8 text-xl hover:bg-[#b4f461] hover:text-black text-gray-400"
+            id="historyBtn"
           >
             History
           </button>
@@ -60,7 +66,7 @@
       <section id="donateCard">
         <!-- 1st donation start -->
 
-        <div class="grid grid-cols-2 gap-8 p-8">
+        <div class="lg:grid grid-cols-2 gap-8 p-8">
           <div class="h-96 overflow-hidden">
             <img
               src="./assets/noakhali.png"
@@ -74,7 +80,9 @@
                 class="flex items-center gap-2 bg-[#f2f3f2] w-fit py-2 px-4 rounded-lg"
               >
                 <img src="./assets/coin.png" alt="" />
-                <p class="sectionBalance"><span id="donatedBalance" >0</span> BDT</p>
+                <p class="sectionBalance">
+                  <span id="donatedBalance">0</span> BDT
+                </p>
               </span>
               <h1 class="py-4 font-bold text-xl" id="heading1">
                 Donate for Flood at Noakhali, Bangladesh
@@ -107,7 +115,7 @@
         </div>
         <!-- 1st donation end -->
         <!-- 2nd donation start -->
-        <div class="grid grid-cols-2 gap-8 p-8">
+        <div class="lg:grid grid-cols-2 gap-8 p-8">
           <div class="h-96 overflow-hidden">
             <img
               src="./assets/feni.png"
@@ -156,7 +164,7 @@
         </div>
         <!-- 2nd donation end -->
         <!-- 3rd donation start -->
-        <div class="grid grid-cols-2 gap-8 p-8">
+        <div class="lg:grid grid-cols-2 gap-8 p-8">
           <div class="h-96 overflow-hidden">
             <img
               src="./assets/feni.png"
@@ -208,9 +216,7 @@
       </section>
 
       <!-- History section -->
-      <section id="history" class="container hidden">
-          
-      </section>
+      <section id="history" class="container hidden"></section>
 
       <!-- modal section -->
       <section>
@@ -235,6 +241,6 @@
     </main>
     <footer></footer>
     <script src="js/utilities.js"></script>
-     <script src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

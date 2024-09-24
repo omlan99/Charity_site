@@ -1,21 +1,16 @@
 // Common function to getelemnts ID
-function getMyId(id){
-  return  document.getElementById(id);
+function getMyId(id) {
+  return document.getElementById(id);
 }
 
-// Common function to get input value 
-function getIdValue(id){
-    return  document.getElementById(id).value;
-  }
- 
-  // Common function to handle donation
+// Common function to handle donation
 function handleDonation(inputId, donatedBalanceId, donationHeadingId) {
   // Get the main balance element and its current value
   const mainBalanceElement = getMyId("mainBalance");
   let mainBalance = parseInt(mainBalanceElement.textContent);
 
   // Get the donation input value for the specific section
-  let donationInput = getMyId(inputId); 
+  let donationInput = getMyId(inputId);
   const donationAmount = parseInt(donationInput.value);
 
   // Ensure input is a valid number and is less than or equal to main balance
@@ -43,13 +38,12 @@ function handleDonation(inputId, donatedBalanceId, donationHeadingId) {
 
     // History section creation
     const historyData = document.createElement("div");
-    historyData.className = "bg-white p-4 rounded-lg border-grey-500 border-2 my-4";
+    historyData.className =
+      "bg-white p-4 rounded-lg border-grey-500 border-2 my-4";
     historyData.innerHTML = `
     <p class="font-medium text-xl">${donationAmount} taka is donated for ${donateHeading}</p>
     <p>${currentTime}</p>
  `;
-
-    // Add the history entry to the top of the history section
     let historyBox = getMyId("history");
     historyBox.insertBefore(historyData, historyBox.firstChild);
 
